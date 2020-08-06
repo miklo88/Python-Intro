@@ -16,9 +16,10 @@ y = "7"
 # YOUR CODE HERE
 print(x + int(y)) 
 # have to change y from a string to an int.
- 
 
 
 # Write a print statement that combines x + y into the string value 57
 
 # YOUR CODE HERE
+print(str(x) + y)
+# python will not perform addition if values are strings. if strings python will concatenate the values aka 57 aqui
