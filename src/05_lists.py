@@ -31,7 +31,6 @@ print('insert()', x)
 # YOUR CODE HERE
 print('len()',len(x))
 
-
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
 # list comprehension
