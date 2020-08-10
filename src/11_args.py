@@ -34,12 +34,14 @@ print(f2(sum(a)))  # Should print 22
 # Note: Google "python default arguments" for a hint.
 
 # YOUR CODE HERE
-# def f3(arg1 = 0, arg2 = 0):
-    
+def f3(arg1 = 0, arg2 = 0):
+    if arg1 and arg2:
+        return arg1 + arg2
+    else:
+        return arg1 + 1
 
-
-# print(f3(1, 2))  # Should print 3
-# print(f3(8))     # Should print 9
+print(f3(1, 2))  # Should print 3
+print(f3(8))     # Should print 9
 
 # Write a function f4 that accepts an arbitrary number of keyword arguments and
 # prints out the keys and values like so:
@@ -50,6 +52,8 @@ print(f2(sum(a)))  # Should print 22
 # Note: Google "python keyword arguments".
 
 # YOUR CODE HERE
+def f4(**kwargs):
+    print(kwargs)
 
 # Should print
 # key: a, value: 12
@@ -68,4 +72,5 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-f4(d)
+# unpacking!
+f4(**d)
