@@ -30,3 +30,28 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+# user input need a month and year
+
+# day = input(f'Enter a day: ')
+# week = input(f'Enter a week: ')
+# month = input(f'Enter a month: ')
+# year = input(f'Enter a year: ')
+date = calendar.month(2020, 10)
+print(date)
+
+class Calendar():
+      def __init__(self, date, time):
+            self.date = date
+            self.time = time
+      
+      def __str__(self):
+            return f'The date and time are : {self.date} : {self.time}'
+
+
+day = Calendar('Date','Time')
+print(day)
+
+# print(month)
+# print(year)
+# print(datetime.date)
+# print(datetime.time)
